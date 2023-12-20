@@ -19,7 +19,7 @@ const CurrentWeather = () => {
         messageOneStyles = {highLow}
         messageTwoStyles = {highLow}/>
 
-        <RowText messageOne = {'Its sunny'} messageTwo = {'Its perfect t-shirt weather'}
+        <RowText messageOne = {'Its sunny'} messageTwo = {weatherType['Clear'].message}
         containerStyles = {bodyWrapper}
         messageOneStyles = {description}
         messageTwoStyles = {message}/>
