@@ -1,20 +1,18 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
 import CurrentWeather from './src/screenss/CurrentWeather';
 import UpcomingWeather from './src/screenss/UpcomingWeather';
 import City from './src/screenss/City';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Feather } from '@expo/vector-icons'
+import Tabs from './src/components/Tabs';
 
 const App = () => {
   return(
-    <View style = {styles.container}>
-      <City/>
-    </View>
+    <NavigationContainer>
+      <Tabs/>
+    </NavigationContainer>
   )
 }
 
-const styles = StyleSheet.create({
-  container:{
-    flex: 1
-  }
-})
 export default App;
